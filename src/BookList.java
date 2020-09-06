@@ -19,7 +19,7 @@ public class BookList {
         String author = input.nextLine();
 
         System.out.print("Is borrowed (1 = yes, 0 = no): ");
-        String choice = input.next();
+        String choice = input.nextLine();
 
         boolean isBorrowed = switch (choice) {
             case "1" -> true;

@@ -17,24 +17,24 @@ public class Manager {
                 System.out.println("4. Borrow a book by book id");
                 System.out.println("5. Exit");
                 System.out.print("Your choice: ");
-//                int choice = scanner.nextInt();
-                 String choice = scanner.nextLine();
-//                while(true) {
-//                    if (choice <= 5) {
-//                        break;
-//                    } else {
-//                        System.out.println("Please choose between 1 ~ 5");
-//                        System.out.print("Your choice: ");
-//                        choice = scanner.nextInt();
-//                    }
-//                }
+                int choice = scanner.nextInt();
+
+                while(true) {
+                    if (choice <= 5) {
+                        break;
+                    } else {
+                        System.out.println("Please choose between 1 ~ 5");
+                        System.out.print("Your choice: ");
+                        choice = scanner.nextInt();
+                    }
+                }
 
                 switch (choice) {
-                    case "1" -> books.add();
-                    case "2" -> books.searchBook();
-                    case "3" -> books.displayBooks();
-                    case "4" -> books.borrow();
-                    case "5" -> isRunning = false;
+                    case 1 -> books.add();
+                    case 2 -> books.searchBook();
+                    case 3 -> books.displayBooks();
+                    case 4 -> books.borrow();
+                    case 5 -> isRunning = false;
                 }
             }
         }
