@@ -69,7 +69,6 @@ public class BookList {
     }
 
     public void borrow() {
-        List<Book> bookBorrowed = new ArrayList<>();
         System.out.println("Enter a book ID to borrow: ");
         System.out.print("Book ID: ");
         String searchKey = input.next();
