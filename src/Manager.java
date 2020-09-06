@@ -35,9 +35,7 @@ public class Manager {
                     case "3" -> books.displayBooks();
                     case "4" -> books.borrow();
                     case "5" -> isRunning = false;
-
                 }
-
             }
         }
 
