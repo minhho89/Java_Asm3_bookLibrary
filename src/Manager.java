@@ -17,6 +17,7 @@ public class Manager {
                 System.out.println("4. Borrow a book by book id");
                 System.out.println("5. Exit");
                 System.out.print("Your choice: ");
+
                 int choice = scanner.nextInt();
 
                 while(true) {
