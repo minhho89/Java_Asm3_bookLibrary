@@ -77,11 +77,16 @@ public class BookList {
             if (abook.getId().equalsIgnoreCase(searchKey)) {
                 if(abook.getBorrowed()){
                     System.out.println("You cannot borrow this book. The book has been borrowed.");
+                    System.out.println("---------------------------------------");
+                } else {
+                    abook.setBorrowed(true);
+                    System.out.println("You have successfully borrowed the book: " + abook.getTitle());
+                    System.out.println("---------------------------------------");
                 }
-                abook.setBorrowed(true);
-                System.out.println("You have successfully borrowed the book: " + abook.getTitle());
+
             } else {
                 System.out.println("There is no such book in library.");
+                System.out.println("---------------------------------------");
             }
         }
     }
